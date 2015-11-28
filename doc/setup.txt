@@ -1,6 +1,9 @@
 Setting up a node project directory for Jasmine testing.
 2015/11/27 LMK
 
+Install node and npm. 
+Install libraries: jasmine-node jasmine-expect node-forge
+
 Example: lima/
 
 bin:
