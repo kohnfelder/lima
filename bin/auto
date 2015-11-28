@@ -1,0 +1,23 @@
+#!/bin/bash
+# Skeleton new source code and test.
+HERE="`dirname $0`"
+cat <<EOF >$HERE/../lib/$1.js
+// $1.js
+// Copyright 2015 Loren Kohnfelder
+
+'use strict';
+
+EOF
+cat <<EOF >$HERE/../spec/$1-spec.js
+// Test for $1.js using Jasmine.
+// Copyright 2015 Loren Kohnfelder
+
+var $1 = require('../lib/$1.js');
+
+describe("$1.", function() {
+    it("works", function() {
+	expect(true).toBeDefined();
+	expect(2+2).toEqual(4);
+      });
+  });
+EOF

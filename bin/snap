@@ -1,0 +1,7 @@
+#!/bin/bash
+# Archive this project.
+PROJECT=lima
+ARCHIVE="~/Projects/archive/$PROJECT"`date +'%y%m%d%H%M'`
+rm */*~ */*/*~
+zip -r -v $ARCHIVE *
+echo Created $ARCHIVE".zip"

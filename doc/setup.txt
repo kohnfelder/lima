@@ -1,0 +1,29 @@
+Setting up a node project directory for Jasmine testing.
+2015/11/27 LMK
+
+Example: lima/
+
+bin:
+auto		./bin/auto example - creates source skeletons
+jasmine-node	sym link to jasmine
+snap		creates archive tarball in ../archive
+test		run Jasmine tester
+
+doc:
+setup.txt	this documentation
+
+lib:		source code library
+
+test:		spec tests source code
+
+Commandline:
+(cd bin; ln -s ../../node_modules/jasmine-node/bin/jasmine-node )
+
+----
+
+Start writing code:
+./bin/auto demo
+ls */demo*
+lib/demo.js		spec/demo-spec.js
+
+

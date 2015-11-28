@@ -1,0 +1,5 @@
+#!/bin/bash
+# Test this project.
+HERE="`dirname $0`"
+$HERE/jasmine-node  --autotest $HERE/../lib $HERE/../spec
+
